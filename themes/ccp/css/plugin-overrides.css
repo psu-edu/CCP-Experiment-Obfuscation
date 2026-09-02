@@ -1,0 +1,10 @@
+/*** Plugin Overrides ***/
+/***** AvantSearch *****/
+.search-td-image img {
+    margin: 2px 12px 4px 4px;
+    width: 140px;
+    border: 1px solid #ccc;
+    padding: 3px;
+    background-color: #fff;
+    max-height: 200px;
+}

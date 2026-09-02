@@ -1,0 +1,1117 @@
+:root {
+	--link-color: #3d5a98;
+	--link-hover-color: #7596b9;
+}
+
+/* Override any theme's attempt to force field/option pairs to not be side-by-side. */
+#content .inputs {
+	clear: none !important;
+}
+
+.table-view-layout-option select {
+	width: 160px;
+}
+
+.table-view-limit-option select {
+	width: 60px;
+}
+
+#search-filter-form {
+	font-family: "Lato", sans-serif;
+}
+
+#search-filter-form .advanced-search-terms {
+	margin-top:8px;
+}
+
+#search-filter-form input[type=text] {
+	border: 1px solid #d8d8d8;
+	box-shadow: 0 0 .25em #d6d6d6 inset;
+	display: inline-block;
+	font-size: 14px;
+	height: 30px;
+	line-height: 20px;
+	max-width: 100%;
+	min-height: 2em;
+	padding: 0.375em;
+	width:100%;
+}
+
+#search-filter-form label {
+	font-size: 16px;
+	margin-right: 0px;
+	margin-bottom: 4px;
+}
+
+.search-radio-buttons label,
+.search-form-view-selector label {
+	clear: left;
+	float: left;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 10px;
+	padding: 0 0 8px 24px;;
+}
+
+#avantsearch-primary .search-radio-buttons {
+	line-height: 18px;
+	margin: 0 0 8px 0;
+	padding: 8px 0;
+}
+
+#avantsearch-primary .search-radio-buttons label {
+	padding-left: 0;
+}
+
+#avantsearch-secondary h2 {
+	color:#555;
+}
+
+#avantsearch-secondary .search-radio-buttons,
+.search-form-view-selector {
+	margin-bottom: 8px;
+	padding: 8px 0;
+}
+
+/* Add field button */
+.add_search {
+	margin: 6px 0 12px 0;
+}
+
+/* Remove field button */
+.remove_search {
+	margin: 8px 0 16px 0;
+}
+
+.remove_search:after {
+	content: "";
+}
+
+
+/* === Advanced Search Form ===
+--------------------------------------------------------- */
+/* Add a little space between a radio button or checkbox and its label */
+input[type="radio"] {
+  margin-right: 6px;
+}
+
+input[type="checkbox"] {
+  margin-left: 6px;
+}
+
+#search-filter-form {
+	margin-left: 0;
+	width: 100%;
+}
+
+#search-filter-form #avantsearch-primary {
+	box-sizing: border-box;
+    	float:left;
+    	width: 60%;
+}
+
+#search-filter-form #avantsearch-secondary {
+	border-left: none;
+	float: right;
+	margin-top: 12px;
+	padding: 0 0 1.5em 1.5em;
+	width: 37%;
+	word-wrap: break-word;
+}
+
+/* Format the boxed section containing one set of search criteria */
+.search-form-section {
+	-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	-moz-box-shadow:    0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	border-top: 1px solid #eee;
+	float: left;
+	font-family: "Lato", sans-serif;
+	line-height: 28px;
+	margin: 12px 0 12px 0;
+	padding: 24px 16px 12px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.search-form-section .avantsearch-label-column {
+	float: left;
+	width: 20%;
+}
+
+.search-form-section .avantsearch-option-column {
+	float: left;
+	margin-left: 0;
+	width: 80%;
+}
+
+.search-form-section .inputs {
+	line-height: 28px;
+	min-height: 3em;
+}
+
+.search-entry:first-of-type .advanced-search-joiner {
+  	display: none;
+}
+
+.advanced-search-joiner {
+  	width: 15%;
+}
+
+.search-entry:first-of-type select {
+  	width:48%;
+}
+
+/* Make the width of the select boxes that appear after the joiner dropdown narrower */
+.search-entry:not(:first-of-type) select:not(:first-of-type) {
+  	width: 40%;
+}
+
+/* Date fields */
+#search-filter-form #date-start,
+#search-filter-form #date-end {
+	margin-right: 1px;
+	width: 15%
+}
+
+#search-button {
+	margin-bottom:  30px;
+}
+
+/* Make the search button appear at the top of the secondary column. */
+#search-button input {
+	margin-top: 0;
+}
+
+.search-radio-buttons,
+.search-form-view-selector {
+	margin-top: 2px;
+}
+
+.search-view-option {
+	height: 36px;
+}
+
+.search-images-only-option {
+    	clear: both;
+}
+
+.search-view-options {
+	clear: both;
+	padding-top:8px;
+	padding-bottom:12px;
+}
+
+.search-view-options input {
+	height: 28px;
+}
+
+.search-view-options label {
+	height: 28px;
+	line-height: 28px;
+	margin-bottom: 0;
+	padding-top: 0;
+}
+
+.search-view-options select {
+	height: 28px;
+	line-height: 28px;
+	margin: 0 0 0 6px;
+}
+
+/* Display 'Clear all search filters' graphic before link */
+.search-form-reset-button::before {
+	content: "\f12d";
+	font-family: "FontAwesome";
+	font-size: 20px;
+}
+
+/* Next styles are for 'Clear all search filters' link and 'Go to Advanced Search' link */
+.search-form-reset-button a:link,
+.search-form-reset-button a:visited {
+	color: var(--link-color);
+	text-decoration: none;
+}
+
+.search-form-reset-button a:hover {
+	color: var(--link-hover-color);
+}
+
+.search-form-reset-button {
+	clear: both;
+	padding-top: 18px;
+}
+
+/* === Search Results - Common to all Views ===
+--------------------------------------------------------- */
+/* Position Modify Search button */
+.modify-search-button {
+	float: right;
+	margin: 12px 0;
+	text-align: center;
+}
+
+.modify-search-button button {
+	min-width: 165px;
+}
+
+.search-result {
+	padding-left:4px;
+}
+
+.search-relationship-table {
+	table-layout: fixed;
+	width: 100%;
+}
+
+.search-relationship-type {
+	width: 110px;
+	text-align: right;
+	padding-right: 8px !important;
+}
+
+.search-relationship-item {
+	width:325px;
+}
+
+.search-td-relationship {
+	width: 55%;
+}
+
+.search-title-aka,
+.search-relationship,
+.search-related-item {
+	margin-top: 2px;
+}
+
+.search-title-aka {
+	color: #777;
+}
+
+.search-titles-only
+{
+	color: #777777;
+	font-weight: bold;
+}
+
+.search-files-only
+{
+	color: #777777;
+	font-weight: bold;
+}
+
+.search-results-title {
+	display: inline-block;
+	float: left;
+	margin-bottom: .5em;
+	margin-top:.5em;
+	padding: 0;
+	color: #1a77bd;
+	font-size:26px;
+	font-weight: 400;
+	line-height: 1.2em;
+}
+
+.search-results-buttons {
+	float: right;
+	width: 30%;
+}
+
+.search-results-edit {
+	margin-top: 4px;
+	font-size: 14px;
+}
+
+/* The text that describes the current set of filters */
+
+/* Item filters display */
+#search-filter-bar {
+	clear: both;
+	padding-top: 0;
+	padding-bottom: 12px;
+}
+
+#search-filter-bar .search-filter-bar-message {
+	font-size:20px;
+	margin-bottom: 12px;
+}
+
+#search-filter-bar .search-filter-bar-message::before {
+	color: #29536b;
+	content: "\f002";
+	font-family: "FontAwesome";
+	font-size: 22px;
+	line-height: 24px;
+	padding: 0 8px 0 0;
+}
+
+.search-filter-bar-layout {
+	height: 30px;
+}
+
+.search-filter-bar-layout.no-details {
+	font-weight: bold;
+	font-size: 22px;
+	color: #5F780C;
+}
+
+.search-filter-bar-layout-details {
+	display: inline-block;
+	height: 100%;
+	margin-left:12px;
+	padding-top: 5px;
+}
+
+
+/* Position buttons on search results view */
+.search-results-toggle  {
+	float:left;
+	height: 100%;
+	margin: 0;
+}
+
+/* End item filter display */
+
+
+#no-results {
+	clear: both;
+}
+
+#no-results p {
+	margin-top: 0px;
+}
+
+.search-results-layout-options-button {
+	width: 200px;
+	text-align: left;
+}
+
+.search-results-layout-options-button:after {
+	content: "\f0d7";
+	font-family: "FontAwesome";
+	padding-left: 6px;
+	float: right;
+}
+
+/* Change Layout sub menu buttons */
+.search-results-layout-options {
+	position: relative;
+	z-index: 250;
+	-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	-moz-box-shadow:    0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.search-results-layout-options ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.search-results-layout-options li {
+	border-bottom: 1px solid #666;
+	position: relative;
+}
+
+.search-results-layout-options li a {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	border: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	cursor: pointer;
+	display: inline-block;
+	height: auto;
+	line-height: 21px;
+	margin: 0;
+	padding: 2px 8px;
+	width: 100%;
+}
+
+/* Default colors for layout options dropdown items */
+
+.search-results-layout-options li a.layout-normal {
+	background-color: #eee;
+	color: #222;
+}
+
+.search-results-layout-options li a.layout-normal:hover {
+	background-color: #aaa;
+	color: #222;
+}
+
+.search-results-layout-options li a.layout-selected {
+	background-color: #aaa;
+	color: #fff;
+}
+
+
+/* === Pagination controls for Table View ===
+--------------------------------------------------------- */
+.search-pagination-nav {
+	float: right;
+	position: relative;
+}
+
+.search-pagination-nav ul {
+  	background-color: #fff;
+	clear: both;
+	display: inline-block;
+  	margin: 0 0 .5em 0;
+	padding-left: 0;
+	vertical-align: top;
+}
+
+.search-pagination-nav:not(:first-of-type) {
+	margin-top: .5em;
+}
+
+.search-pagination-next a:hover::after,
+.search-pagination-previous a:hover::after {
+	color: var(--link-hover-color);
+}
+
+.search-pagination li {
+	color: #666666;
+	float: left;
+	font-family: "Roboto Condensed", sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	height: 25px;
+	line-height: 22px;
+	list-style-type: none;
+	min-width: 25px;
+	text-align: center;
+}
+
+.search-pagination li:last-child {
+  	margin-right: 0;
+}
+
+.search-pagination li a {
+	background: #f8f8f8;
+	background: -webkit-linear-gradient(top, #f8f8f8, #e2e2e2);
+	background: -moz-linear-gradient(top, #f8f8f8, #e2e2e2);
+	background: -o-linear-gradient(top, #f8f8f8, #e2e2e2);
+	background: linear-gradient(to bottom, #f8f8f8, #e2e2e2);
+	border: 1px solid #D8D8D8;
+	-webkit-box-shadow: 1px 1px 2px rgba(0,0,0,.1), 0 -1px 0 0 rgba(0,0,0,.07) inset;
+	-moz-box-shadow: 1px 1px 2px rgba(0,0,0,.1), 0 -1px 0 0 rgba(0,0,0,.07) inset;
+	box-shadow: 1px 1px 2px rgba(0,0,0,.1), 0 -1px 0 0 rgba(0,0,0,.07) inset;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	display: block;
+	height: 100%;
+}
+
+.search-pagination-next {
+	margin: 0 0 0 8px;
+}
+
+.search-pagination-next a,
+.search-pagination-previous a {
+	font-weight: bold;
+	height: 24px;
+	padding: 0 10px;
+	position: relative;
+	text-indent: -9999px;
+	width: 24px;
+}
+
+.search-pagination-next a:after {
+	content: "\f105";
+	text-indent: 0;
+}
+
+.search-pagination-next a:after,
+.search-pagination-previous a:after {
+	color: var(--link-color);
+	font-family: "FontAwesome";
+	height: 24px;
+	left: 0;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	width: 24px;
+}
+
+.search-pagination-previous {
+	margin: 0 8px 0 0;
+}
+
+.search-pagination-previous a:after {
+	content: "\f104";
+	text-indent: -3px;
+}
+
+.search-pagination .search-page-input input[type=text] {
+	border: .07143em solid #ddd;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	display: inline-block;
+	font-family: "Lato", sans-serif;
+	font-size: 14px;
+	height: 24px;
+	line-height: 18px;
+	margin: 0 5px 0 0;
+	max-width: 100%;
+	min-height: 1.9em;
+	padding: 0;
+	text-align: center;
+	width: 40px;
+}
+
+/* === Search Results - Table View ===
+--------------------------------------------------------- */
+#search-table-view tr {
+	width: 100%;
+}
+
+#search-table-view .search-td-image{
+	width: 18%;
+}
+
+#search-table-view td, #search-table-view th {
+    vertical-align: top;
+}
+
+/* To stripe the search results table rows */
+#search-table-view tbody tr:nth-child(odd) {
+  	background: #f6f6f6;
+}
+
+#search-table-view td {
+	font-size:90%;
+}
+
+#search-table-view a:link,
+#search-table-view a:visited {
+    color: var(--link-color);
+}
+
+#search-table-view a:hover {
+	color: var(--link-hover-color);
+}
+
+.search-td-image img {
+	margin: 2px 12px 4px 4px;
+	width: 140px;
+	border: 1px solid #ccc;
+	padding: 3px;
+	background-color: #fff;
+}
+
+.search-td-image .item-preview-header {
+	padding-left: 8px;
+	width: 140px;
+}
+
+.search-td-title-detail {
+	margin-top: 4px;
+	padding-left: 4px;
+}
+
+.search-td-title {
+	width: 350px;
+}
+
+.search-td-date {
+    width: 80px;
+}
+
+.search-result-title {
+	border-bottom: 1px dotted #ccc;
+	font-size: 120%;
+	margin-top: 4px;
+	margin-bottom: 10px;
+	padding-bottom: 6px;
+}
+
+.search-results-detail-table {
+	margin: 0 0 8px 0;
+}
+
+.search-results-detail-table tr td {
+	border: none;
+}
+
+.search-results-detail-col1,
+.search-results-detail-col2 {
+	width: 30%;
+}
+
+.search-results-detail-col3 {
+	width: 40%;
+}
+
+.search-results-detail-col2,
+.search-results-detail-col3 {
+	padding-left: 6px;
+}
+
+.search-results-detail-col3 {
+	padding-right: 6px;
+}
+
+.search-results-detail-row {
+	background-color: transparent !important;
+}
+
+.search-results-detail-row td
+{
+	font-size: 85% !important;
+	font-family: "Lato", sans-serif;
+	padding-bottom: 0px !important;
+	padding-top: 0px  !important;
+}
+
+.search-results-detail-element {
+	color: #777;
+	font-variant: small-caps;
+}
+
+.search-results-detail-text {
+	color: #000;
+	padding-left: 4px;
+}
+
+.search-more-text {
+	display: none;
+}
+
+.search-show-more {
+	color: var(--link-color);
+	cursor: pointer;
+}
+
+
+/* === Search Results - Index View ===
+--------------------------------------------------------- */
+/* The whole index view */
+#search-index-view-headings {
+	clear: both;
+	padding: 16px 0;
+	column-count: 2;
+}
+
+/* Index letter heading */
+.search-index-view-heading {
+	background: #f8f8f8; /* default for browsers w/o gradients */
+	background: -webkit-linear-gradient(to right, #e2e2e2, #f8f8f8, #ffffff);
+	background: -moz-linear-gradient(to right, #e2e2e2, #f8f8f8, #ffffff);
+	background: -o-linear-gradient(to right, #e2e2e2, #f8f8f8, #ffffff);
+	background: linear-gradient(to right, #e2e2e2, #f8f8f8, #ffffff);
+	border-radius: 3px;
+	color: #777;
+	margin-top:16px;
+	margin-bottom: 8px;
+	padding: 4px 0 4px 8px;
+}
+
+.search-index-view-heading:first-of-type {
+	margin-top: 0;
+}
+
+/* An individual item in the index */
+.search-index-view-record {
+	font-size: 95%;
+	margin-top:0px;
+	margin-bottom: 6px;
+	margin-left: 12px;
+}
+
+.search-index-view-record a:hover {
+	color: var(--link-hover-color);
+}
+
+.search-index-view-record a:visited {
+	color: var(--link-color);
+}
+
+/* count */
+.search-index-view-count {
+	color: #777;
+}
+
+/* Search List Index - letters across the top and bottom */
+.search-index-view-index {
+    float: none;
+    margin-bottom: 16px;
+    height: 25px;
+}
+
+.search-index-view-index li {
+	color: #666666;
+	float: left;
+	font-family: "Roboto Condensed", sans-serif;
+	height: 25px;
+	line-height: 22px;
+	list-style-type: none;
+	min-width: 25px;
+	padding-right: 2px;
+	text-align: center;
+}
+
+.search-index-view-index li:last-child {
+  	margin-right: 0;
+}
+
+.search-index-view-index li a {
+	background: #f8f8f8;
+	background: -webkit-linear-gradient(top, #f8f8f8, #e2e2e2);
+	background: -moz-linear-gradient(top, #f8f8f8, #e2e2e2);
+	background: -o-linear-gradient(top, #f8f8f8, #e2e2e2);
+	background: linear-gradient(to bottom, #f8f8f8, #e2e2e2);
+	border: 1px solid #D8D8D8;
+	border-radius: 3px;
+	-webkit-box-shadow: 1px 1px 2px rgba(0,0,0,.1), 0 -1px 0 0 rgba(0,0,0,.07) inset;
+	-moz-box-shadow: 1px 1px 2px rgba(0,0,0,.1), 0 -1px 0 0 rgba(0,0,0,.07) inset;
+	box-shadow: 1px 1px 2px rgba(0,0,0,.1), 0 -1px 0 0 rgba(0,0,0,.07) inset;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	display: block;
+	height: 100%;
+	padding: 0 7px;
+}
+
+.search-index-view-index li a:hover {
+    background-color: #c2c2c2;
+	background: -webkit-linear-gradient(top, #f8f8f8, #c2c2c2);
+	background: -moz-linear-gradient(top, #f8f8f8, #c2c2c2);
+	background: -o-linear-gradient(top, #f8f8f8, #c2c2c2);
+	background: linear-gradient(to bottom, #f8f8f8, #c2c2c2);
+}
+
+.search-index-view-index li a:visited {
+	color: var(--link-color);
+}
+
+.search-index-view-index li span {
+    border: 1px solid transparent;
+}
+
+#search-index-view-index-top ul,
+#search-index-view-index-bottom ul {
+	margin: 0;
+	padding-left: 0;
+}
+
+
+/* === Search Results - Tree View ===
+--------------------------------------------------------- */
+/* The whole index view */
+.search-tree-headings {
+	margin-left: 24px;
+}
+
+.search-tree-headings ul {
+	border-left: 1px dotted #aaa;
+	cursor: default;
+	list-style-type: none;
+	margin: 0 0 0 16px;
+	padding: 0;
+	position: relative;
+}
+
+.search-tree li {
+  	margin: 0 0 0 10px;
+  	position: relative;
+  	padding: 3px 0 3px 2px;
+}
+
+/* For hiding sub-tree */
+.search-tree ul {
+  	display: none;
+}
+
+/* extend a line to the list item */
+.search-tree li:before {
+  	border-left: none;
+  	border-top: 1px dotted #aaa;
+  	content: ' ';
+  	height: 1px;
+  	left: -9px;
+  	position: absolute;
+  	top: 12px;
+  	width: 10px;
+}
+
+/* erase all lines for last item */
+.search-tree li:last-child:after {
+  	background-color: white;
+  	bottom: 0;
+ 	 content: ' ';
+  	left: -13px;
+  	position: absolute;
+  	top: 17px;
+  	width: 7px;
+}
+
+.search-tree a:hover {
+	color: var(--link-hover-color);
+}
+
+.search-tree a:visited {
+	color: var(--link-color);
+}
+
+/* count and empty entries in tree */
+.search-tree span,
+.search-tree-empty {
+	color: #777;
+}
+
+/* add expander widget */
+.search-tree .expander {
+  	background: #fff url(../images/tree-expander.png) no-repeat scroll;
+  	background-position: -64px -4px; /* Position to the plus symbol in the image png */
+  	cursor: pointer;
+  	height: 9px; width: 9px;
+  	left: -15px;
+ 	position: absolute;
+  	top: 8px;
+}
+
+.search-tree .expander:hover {
+	background-color: #ccc;
+}
+
+.search-tree .expander.expanded {
+	background-position: -78px -4px; /* Position to the minus symbol in the image png */
+}
+
+.search-tree ul.expanded {
+	display: block;
+}
+
+/* Search results header row */
+
+#search-table-view th {
+	color: #29536b;
+	font-size: 18px;
+	font-variant: small-caps;
+	font-weight: normal;
+	padding: 0 0 2px 4px;
+}
+
+#search-table-view th a:after {
+	width: 10px;
+	height: 10px;
+	display: inline-block;
+	line-height: 10px;
+	margin: 0 0 0 5px;
+	content: url('../images/placeholder.png');
+}
+
+#search-table-view th.desc a:after {
+	content: url('../images/sorted-desc.png');
+}
+
+#search-table-view th.asc a:after {
+	content: url('../images/sorted-asc.png');
+}
+
+#search-table-view th a:hover:after {
+	content: url('../images/asc.png');
+}
+
+#search-table-view th.asc a:hover:after {
+	content: url('../images/desc.png');
+}
+
+#search-table-view th.desc a:hover:after {
+	content: url('../images/asc.png');
+}
+
+#search-table-view th a:link,
+#search-table-view th a:visited {
+	color: #29536b;
+}
+
+#search-results {
+	margin:12px 0;
+}
+
+#search-metadata {
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+#search-metadata .search-item-row {
+	border: 0 none;
+	padding-top: 0;
+}
+
+
+/* Relationships View */
+
+.relationships-table-view .search-td-identifier {
+	padding-right: 8px;
+}
+
+.relationships-table-view .search-td-title {
+	width: 30%;
+}
+
+.relationships-table-view .search-td-title .item-preview-header a {
+	padding-right: 106px;
+}
+
+.relationships-table-view .search-td-title .item-preview-header span {
+	visibility: hidden;
+}
+
+.relationships-table-view .search-td-title .item-img,
+.relationships-table-view .search-td-title .element-text {
+	width: 180px;
+}
+
+.relationships-table-view .search-td-title .item-img,
+.relationships-table-view .search-td-title .item-img img {
+	max-height: none;
+}
+
+.relationships-table-view .search-td-relationship {
+	padding-left: 20px;
+	width: 64%;
+}
+
+/* === CSS for Width less than 844px ===
+--------------------------------------------------------- */
+@media screen and (max-width: 844px) {
+	.add_search {
+		clear: both;
+		float: left;
+	}
+
+	/* use .search-results-toggle instead */
+	.search-index-view-column-toggle,
+	.search-results-layout-options-panel {
+		clear: both;
+		margin-left: 0;
+	}
+
+	#search-results-layout {
+		clear: left;
+		float: left;
+		margin-top: 8px;
+	}
+
+	#search-filter-bar {
+		display: block;
+	}
+
+	#search-entry .advanced-search-joiner {
+	    	width: 30%;
+	}
+
+	.modify-search-button {
+		clear: both;
+		float: left;
+	}
+}
+
+/* === CSS for Width between 844 and 768px (Tablet Portrait) ===
+--------------------------------------------------------- */
+@media screen and (max-width: 768px) {
+	.search-form-section .avantsearch-option-column {
+		margin-left: 0;
+		width: 100%;
+	}
+
+	.search-results-buttons {
+		float: left;
+		margin-bottom: 6px;
+	}
+
+	.search-results-toggle {
+		margin-left: 0;
+	}
+}
+
+/* === CSS for Width < 600px ===
+--------------------------------------------------------- */
+@media screen and (max-width: 600px) {
+  .search-td-image img {
+  	width: 100px;
+  }
+
+  .search-td-title {
+  	width: 100px;
+  }
+
+  #search-entry .advanced-search-joiner {
+    width: 30%;
+  }
+
+  #search-filter-form #avantsearch-primary,
+  #search-filter-form #avantsearch-secondary {
+  	width: 100%;
+  }
+
+  #search-filter-form #search-form-section {
+  	width: 100%;
+
+  }
+
+  .search-view-option {
+  	width: 100%;
+  }
+
+	/* Hide alphabet search list index on phones */
+	.search-index-view-index {
+		display: none;
+	}
+
+	/* Advanced Search form */
+	#search-filter-form .eight.columns {
+		width: 92%;
+	}
+
+}
+
+/* === CSS for Width < 480px ===
+--------------------------------------------------------- */
+@media screen and (max-width: 480px) {
+
+	.search-entry {
+		margin-bottom: 1.5em;
+	}
+
+	.search-entry select,
+	.search-entry input[type=text] {
+		display: block;
+		width: 100%;
+	}
+
+	.search-entry:first-of-type select {
+	  width:100%;
+	}
+
+	.search-entry:not(:first-of-type) select:not(:first-of-type) {
+		width:100%;
+	}
+
+	/* Advanced Search form */
+	.search-filter-form .seven.columns {
+		width: 95%;
+	}
+
+	.search-filter-form .avantsearch-label-column,
+	.search-filter-form .avantsearch-option-column {
+		width: 100%;
+	}
+
+	.search-filter-form input[type=text] {
+		width: 100%;
+	}
+
+	#search-index-view-headings {
+		column-count: 1;
+	}
+}
+

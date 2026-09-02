@@ -1,0 +1,15 @@
+p.character{
+    display: none;
+}
+
+p.letter{
+    display: inline;
+}
+
+div.character{
+    display: none;
+}
+
+div.element-text{
+    display: inline;
+}
